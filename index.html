@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Planner Hackathon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- LOGIN SECTION -->
+    <section id="login">
+        <div class="login-container">
+            <h1>Welcome to Trip Planner</h1>
+            <div class="role-toggle">
+                <button id="clientBtn" class="active">Client</button>
+                <button id="adviserBtn">Adviser</button>
+            </div>
+            <form id="loginForm">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- DASHBOARD SECTION -->
+    <section id="dashboard" class="hidden">
+        <header>
+            <h2 id="dashboardTitle">Client Dashboard</h2>
+            <button id="logoutBtn">Logout</button>
+        </header>
+
+        <!-- MENU -->
+        <nav class="menu">
+            <button class="menu-btn" data-section="popular">Popular Trips</button>
+            <button class="menu-btn" data-section="history">History</button>
+            <button class="menu-btn" data-section="adviser">Trip Adviser Suggestions</button>
+        </nav>
+
+        <!-- MAIN CONTENT -->
+        <main id="content">
+            <!-- Popular trips / suggestions will appear here as cards -->
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://source.unsplash.com/400x250/?beach" alt="Beach">
+                    <h3>Sunny Beach Escape</h3>
+                    <p>Relax on the most beautiful beaches with golden sand and crystal water.</p>
+                    <button>View Details</button>
+                </div>
+                <div class="card">
+                    <img src="https://source.unsplash.com/400x250/?mountains" alt="Mountains">
+                    <h3>Mountain Adventure</h3>
+                    <p>Hike the highest peaks and enjoy breathtaking views and fresh air.</p>
+                    <button>View Details</button>
+                </div>
+                <div class="card">
+                    <img src="https://source.unsplash.com/400x250/?city" alt="City">
+                    <h3>City Explorer</h3>
+                    <p>Discover the culture, food, and nightlife of world-famous cities.</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+        </main>
+    </section>
+
+</body>
+</html>
